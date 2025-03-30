@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/user1/Desktop/web/z.%ED%8A%B8%EC%9C%84%ED%84%B0%EC%97%B0%EC%8A%B5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twiiter My Page</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .main_content {
+            flex-grow: 1;
+            border-right: 1px solid #eee;
+        }
+        .profile_header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .profile_header img {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+        }
+        .profile_section {
+            text-align: center;
+            padding: 20px;
+        }
+        .profile_picture {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+        .profile_tabs {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #eee;
+        }
+        .profile_tabs div {
+            padding: 15px;
+            cursor: pointer;
+        }
+        .profile_tabs div.active {
+            border-bottom: 3px solid #1DA1F2;
+        }
+        .who_to_follow {
+            padding: 15px;
+            border-top: 10px solid #f0f0f0;
+        }
+        .follow_suggestion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .follow_btn {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li>
+                    <img src="./Twiiter My Page_files/306-400x300.jpg" alt="샘플 이미지">
+                    Home
+                </li>
+                <li>
+                    <img src="./Twiiter My Page_files/377-402x300.jpg" alt="샘플 이미지">
+                    Explore
+                </li>
+                <li>
+                    <img src="./Twiiter My Page_files/271-401x300.jpg" alt="샘플 이미지">
+                    Bookmarks
+                </li>
+                <li>
+                    <img src="./Twiiter My Page_files/660-399x300.jpg" alt="샘플 이미지">
+                    Jobs
+                </li>
+                <li>
+                    <img src="./Twiiter My Page_files/133-400x302.jpg" alt="샘플 이미지">
+                    Communities
+                </li>
+                <li>
+                    <img src="./Twiiter My Page_files/281-400x299.jpg" alt="샘플 이미지">
+                    Profile
+                </li>
+            </ul>
+            <button class="follow-btn" style="width: 100%; margin-top: 15px;">Post</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <!-- <svg xmlns="http://www.w3.org/200/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg> -->
+                <div>
+                    <h2>최준우</h2>
+                    <p>0 posts</p>
+                </div>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-picture"></div>
+                <h2>최준우</h2>
+                <p>@kangswak</p>
+                <p>Joined March 2025</p>
+                <div>
+                    <span>1 Following</span>
+                    <span style="margin-left: 15px;">0 Followers</span>
+                </div>
+                <button class="follow-btn" style="margin-top: 15px;">Set up profile</button>
+            </div>
+
+            <!-- Profile Tabs -->
+            <div class="profile-tabs">
+                <div class="active">Posts</div>
+                <div>Replies</div>
+                <div>Highlights</div>
+                <div>Articles</div>
+                <div>Media</div>
+                <div>Likes</div>
+            </div>
+
+            <!-- Who to Follow -->
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <div class="follow-suggestion">
+                    <div style="display: flex; align-items: center;">
+                        <img src="./Twiiter My Page_files/605-50x49.jpg" alt="샘플 이미지" style="border-radius: 50%; margin-right: 10px;">
+                        <div>
+                            <strong>이정지</strong>
+                            <p>@dokgodiensaeng</p>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-suggestion">
+                    <div style="display: flex; align-items: center;">
+                        <img src="./Twiiter My Page_files/824-50x50.jpg" alt="샘플 이미지" style="border-radius: 50%; margin-right: 10px;">
+                        <div>
+                            <strong>Cotton Candy</strong>
+                            <p>@Rainedroid</p>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Optional JavaScript for interactivity can be added here
+        document.querySelectorAll('.sidebar-menu li').forEach(item => {
+            item.addEventListener('click', () => {
+                // Add any click interactions you want
+                console.log('Menu item clicked');
+            });
+        });
+    </script>
+
+</body></html>

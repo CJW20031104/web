@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiwitter login</title>
+    <link rel="stylesheet" href="./css/tiwtter.sign_up.css">
+</head>
+<body>
+    <div class="big_wrap">
+      <div class="wrap">
+        <img src="./img/twitter/x_logo.PNG" alt="" class="logo">
+        <div class="txt_wrap">
+          <div class="f_txt">지금 일어나고 있는 일</div>
+          <div class="s_txt">지금 가입하세요.</div>
+          <div class="sign_up">
+            <a href="#">계정 만들기</a>
+          </div>
+          
+          <div class="login_box">
+            <div class="login_txt_box">이미 트위터에 가입하셨나요?</div>
+            <div class="login">
+              <a href="#">로그인</a>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ====================================기본화면인덱스================================================================= -->
+
+    
+    <div class="modal">
+    <div class="modal_header">
+      <button class="close_btn">✕</button>
+      <div class="logo">𝕏</div>
+      <div style="width: 20px;"></div>
+    </div>
+    
+    <form action="#">
+      <div class="modal_content">
+        <h1>계정을 생성하세요</h1>
+        
+        <div class="input_group">
+          <div class="form_field">
+            <input type="text" id="name" maxlength="50" placeholder=" ">
+            <label for="name">이름</label>
+          </div>
+          <div class="char_count">0 / 50</div>
+        </div>
+        
+        <div class="input_group">
+          <div class="form_field">
+            <input type="text" id="phone" placeholder=" ">
+            <label for="phone">휴대폰</label>
+          </div>
+          <div class="alternative">
+            <a href="#">대신 이메일 사용하기</a>
+          </div>
+        </div>
+        
+        <div class="input_group">
+          <label>생년월일</label>
+          <p class="dob_notice">이 정보는 공개적으로 표시되지 않습니다. 비즈니스, 반려동물 등 계정 주체에 상관없이 나의 연령을 확인하세요.</p>
+          
+          <div class="dob_inputs">
+            <select class="select1">
+              <option>월</option>
+            </select>
+            <select class="select2">
+              <option>일</option>
+            </select>
+            <select class="select3">
+              <option>년</option>
+            </select>
+          </div>
+        </div>
+        
+        <button class="next_btn" disabled>
+          <a href="#" class="a_tag">다음</a>
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+<!-- ================================로그인시도화면=============================================== -->
+  <div class="log_pop_pan">
+    <div class="log_pop_pan_header">
+        <button class="close_btn2">✕</button>
+        <div class="log_pop_pan_logo">𝕏</div>
+        <div style="width: 20px;"></div>
+    </div>
+
+    <form action="#">
+        <div class="log_pop_pan_content">
+            <h1 class="chg_txt">아이디를 입력하세요</h1>
+            
+            <div class="input_group">
+                <div class="form_field">
+                    <input type="text" id="id" maxlength="50" placeholder=" ">
+                    <label for="id">아이디</label>
+                </div>
+            </div>
+            
+            <div class="input_group">
+                <div class="form_field">
+                    <input type="password" id="password" placeholder=" ">
+                    <label for="password">비밀번호</label>
+                </div>
+                <div class="alternative">
+                    <!-- <a href="#">대신 이메일 사용하기</a> -->
+                </div>
+            </div>
+        </div>
+
+
+        <button class="send_log_information" disabled>
+            로그인하기
+        </button>
+    </form>
+</div>
+
+
+
+
+  <div class="pan"></div>
+  <script>
+    // let id = document.getElementById("id");
+    // id.addEventListener("change", function(event){
+    //   if(event.target){
+    //     id.innerText = event
+    //   }
+    // })
+    // let id = document.getElementById("id");
+    //     let result = document.getElementById("result");
+
+    //     id.addEventListener("change", function(event){
+    //         if(event.target){
+    //           
+    //             result.innerText = `대문자: ${event.target.value.toUpperCase()}
+    //                                 소문자: ${event.target.value.toLowerCase()}`;
+    //         }
+    //     });
+  </script>
+
+  <script src="./js/tiwtter.select.js"></script>
+  <script src="./js/twitter.close.js"></script>
+  <script src="./js/twitter.logPop.js"></script>
+</body>
+</html>
