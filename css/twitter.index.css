@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    position: relative;
+}
+.modal{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.big_wrap{
+    position: relative;
+    min-height: 880PX;
+}
+.wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-32%, -63%);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.logo{
+    width: 54%;
+    margin-right: 90px;
+}
+.txt_wrap{
+    width: 50%;
+    min-width: 45vw;
+}
+.f_txt{
+    width: 100%;
+    height: 150px;
+    margin: 48px 0;
+    font-weight: 700;
+    font-size: 70px;
+    word-wrap: break-word;
+}
+.s_txt{
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 52px;
+}
+.sign_up{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 17px ;
+    background-color: rgb(29 155 240);
+    line-height: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.login_box{
+    margin-top: 35px;
+}
+.login_txt_box{
+    font-weight: 600;
+}
+.login{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 17px ;
+    border: 0.5px solid black;
+    background-color: rgb(255 255 255);
+    line-height: 40px;
+    color: rgb(29 155 240);
+    font-weight: 600;
+}
+
+
+.sign_up_box{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 953px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*display: none; */
+}
+.sign_up_wrap{
+    width: 600px;
+    height: 650px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+}
+.sign_up_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.sign_close{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    left: 6px;
+    top: 9px; */
+    position: relative;
+}
+.sign_close:hover{
+    background-color: rgb(185, 202, 211);
+}
+.close_line{
+    width: 20px;
+    height: 1.5px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.close_line_L{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close_line_R{
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.sign_up_logo{
+    width: 29px;
+    height: 26px;
+    background-image: url(../img/twitter/x_logo.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+}
+.blank{
+    width: 29px;
+    height: 26px;
+}
+
+.sign_up_main{
+    padding: 15px 80px;
+    display: flex;
+    flex-direction: column;
+}
+.sign_up_txt{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+.name_input_box{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.upper_holder{
+    width: 380px;
+    height: 16px;
+    flex-shrink: 0;
+    position: relative;
+}
+input{
+    width: 380px;
+    height: 30px;
+    /* margin-top: 26px; */
+    padding: 10px ;
+    border: none;
+    outline: none;
+}
+.name_holder{
+    width: 380px;
+    height: 16px;
+    position: absolute;
+    left: 8px;
+    top: 35px;
+    font-size: 20px;
+    color: gray;
+}
+.name{
+    /* margin: 20px 0 15px 0; */
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: transparent;
+}
+.vertification{
+    margin: 20px 0 50px 0;
+}
